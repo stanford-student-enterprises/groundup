@@ -5,7 +5,12 @@ from fabric.contrib.console import confirm
 env.hosts = ['sse_groundup@assu-web.stanford.edu']
 
 def prepare_deploy():
-    local("python manage.py test groundup")
+    test()
+    commit()
+    push()
+    
+def test():
+    local("python manage.py test info")
 
 def commit():
     local("git add -p && git commit")
@@ -17,10 +22,13 @@ def deploy():
     code_dir = '/home/sse/groundup/website'
     with settings(warn_only=True):
         if run("test -d %s" % code_dir).failed:
-            run("git clone groundup@assu-web.stanford.edu:/home/sse/groundup/website.git %s" % code_dir)
+            run("git clone https://github.com/tjsavage/groundup.git %s" % code_dir)
             
     with cd(code_dir):
-        run("git pull")
+        with prefix('workon venv'):
+            run("git pull origin master")
+            
+            
         
     
     

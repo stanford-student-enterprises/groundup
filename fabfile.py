@@ -25,7 +25,7 @@ def deploy():
             run("git clone https://github.com/tjsavage/groundup.git %s" % code_dir)
             
     with cd(code_dir):
-        with prefix('workon venv'):
+        with prefix('source venv/bin/activate'):
             run("git pull origin master")
             
             

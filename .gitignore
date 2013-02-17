@@ -1,4 +1,6 @@
 local_settings.py
+.DS_Store
+sqlite3.db
 
 *.py[cod]
 
@@ -35,4 +37,4 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
->>>>>>> af90d8b365206b7f706514e3427f6ac3400fb779
+

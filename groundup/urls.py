@@ -20,7 +20,6 @@ urlpatterns += patterns('django.contrib.flatpages.views',
     url(r'^about/$', 'flatpage', {'url': '/about/'}, name="about"),
     url(r'^contact/$', 'flatpage', {'url': '/contact/'}, name="contact"),
     url(r'^facts/$', 'flatpage', {'url': '/facts/'}, name="facts"),
-    url(r'^tinymce/', include('tinymce.urls')),
     url(r'^$', 'flatpage', {'url': '/'}, name='home'),
 
 )

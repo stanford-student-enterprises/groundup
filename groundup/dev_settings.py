@@ -126,7 +126,7 @@ INSTALLED_APPS = (
     'south',
     'bootstrap-base',
     'info',
-    'tinymce',
+    #'tinymce',
 )
 
 # A sample logging configuration. The only tangible logging

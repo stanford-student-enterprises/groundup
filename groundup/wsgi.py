@@ -14,7 +14,7 @@ framework.
 
 """
 import site, os
-site.addsitedir(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'venv/lib/python2.7/site-packages')
+site.addsitedir(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'venv/lib/python2.7/site-packages'))
 
 import sys
 

@@ -1,5 +1,5 @@
 venv/
-local_settings.py
+settings.py
 .DS_Store
 sqlite3.db
 pictures

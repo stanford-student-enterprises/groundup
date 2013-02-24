@@ -13,7 +13,10 @@ middleware here, or combine a Django application with an application of another
 framework.
 
 """
-import os, sys
+import site, os
+site.addsitedir(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'venv/lib/python2.7/site-packages')
+
+import sys
 
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))

@@ -28,18 +28,19 @@
         {% block navbar %}
         <div class="{% block navbar-classes %}navbar{% endblock %}">
             <div class="navbar-container">
+                <div class="dots top"></div>
+                <div class="dots bottom"></div>
                 <div class="crest"></div>
                 <div class="container">
                 	<div class="row">
-                		<div class="span5 offset5">
 	                        <ul class="nav">
 	                            <li><a href="/">home</a></li>
 	                            <li><a href="/about/">about</a></li>
 	                            <li><a href="/menu/">menu</a></li>
+                                <li class="spacer"></li>
 	                            <li><a href="/blog/">blog</a></li>
 	                            <li><a href="/vendors/">our vendors</a></li>
 	                        </ul>
-		                </div>
                     </div>
                 </div>
             </div>
@@ -47,6 +48,9 @@
         {% endblock navbar %}
 
         {% block container %}
+        <div class="back-pane">
+            <div class="back-container inner-shadow"></div>
+        </div>
         <div class="pane">
             <div class= "webLinks">
                 <a href="http://www.twitter.com/groundupaol">
@@ -69,6 +73,22 @@
 		    </div>
 	    </div>
         {% endblock container %}
+
+        {% block legal-footer %}
+
+        <div class="footer">
+            <ul class="nav legal">
+                <li>
+                    <div class="legal-blurb">
+                        © 2012 by Ground Up. All rights reserved. All other copyrights and trademarks are property of their respective owners.
+                    </div>
+                </li>
+                <li><div class="legal-logo"></div></li>
+
+            </ul>
+        </div>
+
+        {% endblock legal-footer %}
 
         {% block script-libraries %}
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>

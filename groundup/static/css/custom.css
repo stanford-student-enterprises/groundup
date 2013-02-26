@@ -72,3 +72,16 @@ body {
    -webkit-box-shadow: inset 0 0 10px #888888;
    box-shadow:         inset 0 0 10px #888888;
 }
+
+
+.blog-pages .previous {
+	position: absolute;
+	left: 10px;
+	bottom: 5px;
+}
+
+.blog-pages .next {
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+}

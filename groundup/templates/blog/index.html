@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load custom_filters %}
+
+{% block content %}
+	{% for post in posts %}
+		{% include 'blog/post.html' %}
+	{% endfor %}
+
+	{% if total_pages > 1 %}
+		<div class="blog-pages pager">
+			<ul>
+				<li class="previous{% if current_page == 0 %} disabled{% endif %}"><a href="{% if current_page == 0 %}#{% else %}/blog/?page={{ current_page|add:"-1" }}{% endif %}">Previous</a></li>
+				
+					<li class="next{% if current_page >= total_pages|add:'-1' %} disabled {% endif %}"><a href="{% if current_page >= total_pages|add:'-1' %}#{% else %}/blog/?page={{ current_page|add:"1" }}{% endif %}">Next</a></li>
+			</ul>
+		</div>
+	{% endif %}
+{% endblock %}

@@ -25,4 +25,9 @@ urlpatterns += patterns('django.contrib.flatpages.views',
     url(r'^$', 'flatpage', {'url': '/'}, name='home'),
 
 )
+
+urlpatterns += patterns('',
+	url(r'^blog/', include('blog.urls')),
+)
+
 urlpatterns += staticfiles_urlpatterns()

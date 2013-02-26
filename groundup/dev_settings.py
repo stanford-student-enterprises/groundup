@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'bootstrap-base',
     'info',
     #'tinymce',
+    'blog',
 )
 
 # A sample logging configuration. The only tangible logging

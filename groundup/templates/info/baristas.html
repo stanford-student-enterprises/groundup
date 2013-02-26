@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+	{% for barista in baristas %}
+		{% include 'info/barista_snippet.html' %}
+	{% endfor %}
+{% endblock %}

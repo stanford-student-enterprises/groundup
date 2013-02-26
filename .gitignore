@@ -3,6 +3,8 @@ settings.py
 .DS_Store
 sqlite3.db
 pictures
+groundup/media/*
+groundup/media/
 
 *.py[cod]
 

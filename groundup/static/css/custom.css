@@ -17,23 +17,23 @@ body {
 
 .navbar {
 	position: relative;
-	margin-top: 20px;
-	background-color: #9a3131;
-	max-height: 200px;
-	min-height: 200px;
+	margin-top: 70px;
+	background-color: #000000;
+	max-height: 173px;
+	min-height: 173px;
 }
 
 .navbar-container {
 	position: absolute;
 	background-color: white;
 	top: 10px;
-	min-height: 180px;
+	min-height: 150px;
 	width: 100%;
 }
 
 .navbar .container {
 	position: absolute;
-	margin-top: 60px;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: accidental;
@@ -44,15 +44,26 @@ body {
 	color: #009edf;
 }
 
+.crest {
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -60px;
+	width: 220px;
+	height: 200px;
+	background-image: url(/static/images/Crest.png);
+	background-size: 100%;
+}
+
 .pane {
 	position: relative;
 	background-color: white;
 	min-height: 400px;
-	margin-left: 110px;
-	margin-right: 110px;
-	top: -100px;
-	-webkit-box-shadow: 0px 0px 10px 0px #898989; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-          box-shadow: 0px 0px 10px 0px #898989; 
+	margin-left: 150px;
+	margin-right: 150px;
+	top: -110px;
+	-webkit-box-shadow: 0px 0px 7px 0px #444444; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+          box-shadow: 0px 0px 7px 0px #444444;
 }
 .pane .container {
 	position: absolute;
@@ -64,11 +75,37 @@ body {
 	width: auto;
 }
 
+.webLinks {
+	position: absolute;
+	top:105px;
+	left:-35px;
+	width:30px;
+	height:30px;
+}
+.twitter {
+	width:20px;
+	height:20px;
+	background-image: url(/static/images/twitter_logo.png);
+	background-size: 100%;
+	-webkit-box-shadow: 0px 1px 3px 0px #00000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+      box-shadow: 0px 1px 3px 0px #000000;
+}
+
+.facebook {
+	margin-top:7px;
+	width:20px;
+	height:20px;
+	background-image: url(/static/images/facebook_logo.png);
+	background-size: 100%;
+	-webkit-box-shadow: 0px 1px 3px 0px #000000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+      box-shadow: 0px 1px 3px 0px #000000;
+}
+
 .pane #content {
 }
 
 .inner-shadow {
-   -moz-box-shadow:    inset 0 0 10px #888888;
-   -webkit-box-shadow: inset 0 0 10px #888888;
-   box-shadow:         inset 0 0 10px #888888;
+   -moz-box-shadow:    inset 0 0 7px #444444;
+   -webkit-box-shadow: inset 0 0 7px #444444;
+   box-shadow:         inset 0 0 7px #444444;
 }

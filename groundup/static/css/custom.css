@@ -232,12 +232,15 @@ body {
 	padding: 10px;
 }
 
+.menu-item-info {
+	padding: 20px;
+	margin-left: 250px;
+}
+
 .menu-item .menu-item-image {
 	width: 250px;
 	float: left;
 }
 
 .menu-item .menu-item-name {
-	margin-left: 250px;
-	padding: 20px;
 }

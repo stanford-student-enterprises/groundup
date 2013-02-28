@@ -23,8 +23,8 @@ class MenuItem(models.Model):
         ('O', "Other"),
     )
     name = models.CharField(max_length=100)
-    description = models.TextField(blank=True)
-    price = models.DecimalField(blank=True, decimal_places=2, max_digits=6)
+    description = models.TextField(blank=True, null=True)
+    price = models.DecimalField(blank=True, decimal_places=2, max_digits=6, null=True)
     image = models.ImageField(upload_to="items/", null=True, blank=True)
     category = models.CharField(max_length=2, choices=CATEGORY_CHOICES)
 

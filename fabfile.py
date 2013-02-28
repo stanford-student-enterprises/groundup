@@ -27,6 +27,7 @@ def deploy():
     with cd(code_dir):
         with prefix('source venv/bin/activate'):
             run("git pull origin master")
+            run("python manage.py migrate --all")
             
             
         

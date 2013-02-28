@@ -2,7 +2,9 @@
 
 
 {% block content %}
-	{% for item in items %}
-		{% include 'info/menuitem_snippet.html' %}
-	{% endfor %}
+	<div class="pane-content">
+		{% for item in items %}
+			{% include 'info/menuitem_snippet.html' %}
+		{% endfor %}
+	</div>
 {% endblock %}

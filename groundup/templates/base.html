@@ -50,29 +50,31 @@
         {% endblock navbar %}
 
         {% block container %}
-        <div class="back-pane">
-            <div class="back-container inner-shadow"></div>
-        </div>
-        <div class="pane">
-            <div class= "webLinks">
-                <a href="http://www.twitter.com/groundupaol">
-                    <div class="twitter"></div>
-                </a>
-                <a href="http://www.facebook.com/pages/Ground-Up/196548740430482">
-                    <div class="facebook"></div>
-                </a>
+        <div class="main-display">
+            <!--div class="back-pane">
+                <div class="back-container inner-shadow"></div>
+            </div-->
+            <div class="pane">
+                <div class= "webLinks">
+                    <a href="http://www.twitter.com/groundupaol">
+                        <div class="twitter"></div>
+                    </a>
+                    <a href="http://www.facebook.com/pages/Ground-Up/196548740430482">
+                        <div class="facebook"></div>
+                    </a>
+                </div>
+            	<div class="inner-pane inner-shadow">
+    		        <div id="content">
+
+    		            {% block content %}
+
+    		            {% endblock %}
+
+    		            <footer>{% block footer %}{% endblock %}</footer>
+
+    		        </div>
+    		    </div>
             </div>
-        	<div class="container inner-shadow">
-		        <div class="span3 offset2" id="content">
-
-		            {% block content %}
-
-		            {% endblock %}
-
-		            <footer>{% block footer %}{% endblock %}</footer>
-
-		        </div>
-		    </div>
 	    </div>
         {% endblock container %}
 

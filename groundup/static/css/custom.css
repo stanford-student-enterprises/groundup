@@ -13,6 +13,7 @@ html {
 
 body {
 	background-color: transparent;
+	font-family: Helvetica, Arial;
 }
 
 .navbar {
@@ -81,6 +82,12 @@ body {
 	background-size: 100%;
 }
 
+.main-display {
+	position: relative;
+	height: auto;
+	top: -90px;
+}
+
 .back-pane {
 	position: relative;
 	background-color: white;
@@ -90,6 +97,7 @@ body {
 	top: -80px;
 	-webkit-box-shadow: 0px 0px 7px 0px #444444; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
           box-shadow: 0px 0px 7px 0px #444444;
+    height: inherit;
 }
 
 .back-container {
@@ -108,18 +116,18 @@ body {
 	min-height: 450px;
 	margin-left: 150px;
 	margin-right: 150px;
-	top: -510px;
+	top: 0px;
 	-webkit-box-shadow: 0px 0px 7px 0px #444444; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
           box-shadow: 0px 0px 7px 0px #444444;
 }
-.pane .container {
-	position: absolute;
+.pane .inner-pane {
+	position: relative;
 	bottom: 5px;
 	top: 5px;
-	left: 5px;
-	right: 5px;
+	min-height: 450px;
+	margin-left: 5px;
+	margin-right: 5px;
 	background-color:#6db2ec;
-	width: auto;
 }
 
 .webLinks {
@@ -151,18 +159,27 @@ body {
 .pane #content {
 }
 
+.main-display, .pane, .pane .container, .pane #content {
+	padding-bottom: 10px;
+	overflow: hidden;
+
+}
+
 .inner-shadow {
    -moz-box-shadow:    inset 0 0 7px #444444;
    -webkit-box-shadow: inset 0 0 7px #444444;
    box-shadow:         inset 0 0 7px #444444;
 }
 
+.footer {
+	position: relative;
+}
 
 .legal {
 	position:relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -500px;
+	margin-top: -50px;
 	font-family: helvetica;
 	font-size: 8px;
 	font-weight: normal;
@@ -199,4 +216,31 @@ body {
 	position: absolute;
 	right: 10px;
 	bottom: 5px;
+}
+
+#myCarousel {
+	margin: 10px;
+	width: auto;
+	float: left;
+}
+
+#homeInfo {
+	margin-left: 397px;
+}
+
+.pane-content {
+	padding: 10px;
+}
+
+.menu-item-info {
+	padding: 20px;
+	margin-left: 250px;
+}
+
+.menu-item .menu-item-image {
+	width: 250px;
+	float: left;
+}
+
+.menu-item .menu-item-name {
 }

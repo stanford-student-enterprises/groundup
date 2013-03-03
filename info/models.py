@@ -8,6 +8,15 @@ class Barista(models.Model):
     def __unicode__(self):
         return self.name
 
+class BlogPost(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+    image = models.ImageField(upload_to="posts/", null=True, blank=True)
+    date_added = models.DateTimeField(auto_now_add=True)
+    
+    def __unicode__(self):
+        return "%s: %s" % (self.date_added, self.title)
+
 class Vendor(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
@@ -24,9 +33,6 @@ class MenuItem(models.Model):
     )
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True)
-    price = models.DecimalField(blank=True, decimal_places=2, max_digits=6)
+    price = models.DecimalField(blank=True)
     image = models.ImageField(upload_to="items/", null=True, blank=True)
     category = models.CharField(max_length=2, choices=CATEGORY_CHOICES)
-
-    def __unicode__(self):
-    	return self.name

@@ -2,8 +2,10 @@ venv/
 settings.py
 .DS_Store
 sqlite3.db
-pictures
 groundup/media/*
+all_pictures/
+pics/
+pics.zip
 groundup/media/
 
 *.py[cod]

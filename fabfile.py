@@ -22,7 +22,7 @@ def deploy():
     code_dir = '/home/sse/groundup/website'
     with settings(warn_only=True):
         if run("test -d %s" % code_dir).failed:
-            run("git clone https://github.com/tjsavage/groundup.git %s" % code_dir)
+            run("git clone https://github.com/stanford-student-enterprises/groundup.git %s" % code_dir)
             
     with cd(code_dir):
         with prefix('source venv/bin/activate'):

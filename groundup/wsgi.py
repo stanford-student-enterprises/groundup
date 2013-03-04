@@ -1,5 +1,5 @@
 """
-WSGI config for groundup project.
+WSGI config for store_manager project.
 
 This module contains the WSGI application used by Django's development server
 and any production WSGI deployments. It should expose a module-level variable
@@ -13,16 +13,32 @@ middleware here, or combine a Django application with an application of another
 framework.
 
 """
-import site, os
-site.addsitedir(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'venv/lib/python2.7/site-packages'))
+import os, sys, site
 
-import sys
 
 sys.path.append(os.path.dirname(__file__))
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+print >> sys.stderr, sys.path
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "groundup.settings")
 
+ALLDIRS = ['/home/sse/groundup/website/venv/lib/python2.7/site-packages']
+
+# Remember original sys.path.
+prev_sys_path = list(sys.path) 
+
+# Add each new site-packages directory.
+for directory in ALLDIRS:
+  site.addsitedir(directory)
+
+# Reorder sys.path so new directories at the front.
+new_sys_path = [] 
+for item in list(sys.path): 
+    if item not in prev_sys_path: 
+        new_sys_path.append(item) 
+        sys.path.remove(item) 
+sys.path[:0] = new_sys_path 
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION
 # setting points here.

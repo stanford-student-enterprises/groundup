@@ -239,6 +239,7 @@ body {
 
 .menu-item .menu-item-image {
 	width: 250px;
+	max-height: 250px;
 	float: left;
 }
 

@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.flatpages.models import FlatPage
 from django.contrib.flatpages.admin import FlatPageAdmin as FlatPageAdminOld
 
-from models import Barista, MenuItem
+from models import Barista, MenuItem, Vendor
 
 class FlatPageAdmin(FlatPageAdminOld):
     class Media:
@@ -15,3 +15,4 @@ admin.site.register(FlatPage, FlatPageAdmin)
 
 admin.site.register(Barista)
 admin.site.register(MenuItem)
+admin.site.register(Vendor)

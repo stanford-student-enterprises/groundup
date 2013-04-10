@@ -36,3 +36,6 @@ class MenuItem(models.Model):
     price = models.DecimalField(blank=True, decimal_places=2, max_digits=6, null=True)
     image = models.ImageField(upload_to="items/", null=True, blank=True)
     category = models.CharField(max_length=2, choices=CATEGORY_CHOICES)
+
+    def __unicode__(self):
+        return "%s" % self.name

@@ -2,7 +2,9 @@
 
 
 {% block content %}
+<div class="pane-content">
 	{% for barista in baristas %}
 		{% include 'info/barista_snippet.html' %}
 	{% endfor %}
+</div>
 {% endblock %}

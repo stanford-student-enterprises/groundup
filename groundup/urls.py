@@ -34,6 +34,7 @@ urlpatterns += patterns('',
 	url(r'^baristas/', 'info.views.baristas'),
 	url(r'^menu/', 'info.views.menu'),
     url(r'^vendors/', 'info.views.vendors'),
+    url(r'^reserve/', 'reservations.views.reserve'),
 )
 
 urlpatterns += staticfiles_urlpatterns()

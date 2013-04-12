@@ -16,11 +16,11 @@ body {
 	font-family: Helvetica, Arial;
 }
 
-.pane-content>h1, h2, h3, h4, h5, h6 {
+.pane-content h1, h2, h3, h4, h5, h6 {
     font-family: accidental;
 }
 
-.pane-content>h1, h2, h3, p {
+.pane-content h1, h2, h3, p {
     color: white;
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 .spacer {
-	width: 220px;
+	width: 250px;
 	height: 20px;
 }
 
@@ -231,8 +231,9 @@ body {
 }
 
 #myCarousel {
-	margin: 10px;
-	width: auto;
+	margin: 30px;
+	margin-top: 60px;
+	width: 450px;
 	float: left;
 }
 
@@ -264,7 +265,7 @@ body {
 .menu-item .menu-item-name {
 }
 
-.image_border {
+.image-border {
 	position: relative;
 	background-color: white;
 	padding: 5px;
@@ -273,8 +274,21 @@ body {
           box-shadow: 0px 0px 7px 0px #444444;
 }
 
+.home-info {
+	width: 330px;
+	margin-top: 70px;
+	margin-left: 80px;
+}
 
+.home-header {
+	font-size: 100px;
+	font-weight: normal; 
+}
 
+.home-blurb {
+	font-weight: normal;
+	padding-top: 25px;
+}
 
 
 

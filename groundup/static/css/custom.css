@@ -16,6 +16,18 @@ body {
 	font-family: Helvetica, Arial;
 }
 
+.pane-content>h1, h2, h3, h4, h5, h6 {
+    font-family: accidental;
+}
+
+.pane-content>h1, h2, h3, p {
+    color: white;
+}
+
+.pane-content {
+    color: white;
+}
+
 .navbar {
 	position: relative;
 	margin-top: 70px;

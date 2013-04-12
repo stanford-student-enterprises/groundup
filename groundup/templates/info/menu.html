@@ -5,34 +5,35 @@
 
 {% block content %}
 	<div class="pane-content">
-        <div class="row">
-            <div class="span4">
-                <h2>Drinks</h2>
-                <table class="table">
-        		{% for item in items %}
-        			{% if item.get_category_display == 'Drinks' %}
-                        <tr>
-                            <td>{{ item.name }}</td>
-                            <td>{{ item.price|currency }}</td>
-                        </tr>
-                    {% endif %}
-        		{% endfor %}
-                </table>
-            </div>
-            <div class="span4">
-                <h2>Food</h2>
-                <table class="table">
-                {% for item in items %}
-                    {% if item.get_category_display == 'Food' %}
-                        <tr>
-                            <td>{{ item.name }}</td>
-                            <td>{{ item.price|currency }}</td>
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </table>
+        <div class="pane-centered">
+            <div class="row">
+                <div class="span4">
+                    <h2>Drinks</h2>
+                    <table class="table">
+            		{% for item in items %}
+            			{% if item.get_category_display == 'Drinks' %}
+                            <tr>
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.price|currency }}</td>
+                            </tr>
+                        {% endif %}
+            		{% endfor %}
+                    </table>
+                </div>
+                <div class="span4">
+                    <h2>Food</h2>
+                    <table class="table">
+                    {% for item in items %}
+                        {% if item.get_category_display == 'Food' %}
+                            <tr>
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.price|currency }}</td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                    </table>
+                </div>
             </div>
         </div>
-
 	</div>
 {% endblock %}

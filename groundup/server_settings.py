@@ -133,6 +133,7 @@ INSTALLED_APPS = (
     'bootstrap-base',
     'django.contrib.humanize',
     'info',
+    'blog',
     #'tinymce',
     'reservations',
 )

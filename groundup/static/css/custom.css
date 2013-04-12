@@ -233,7 +233,7 @@ body {
 #myCarousel {
 	margin: 30px;
 	margin-top: 60px;
-	width: 450px;
+	width: 80%;
 	float: left;
 }
 
@@ -286,7 +286,7 @@ body {
 .home-info {
 	width: 330px;
 	margin-top: 70px;
-	margin-left: 80px;
+	margin-left: 30px;
 }
 
 .home-header {
@@ -297,6 +297,10 @@ body {
 .home-blurb {
 	font-weight: normal;
 	padding-top: 25px;
+}
+
+.order-form {
+    margin-left:80px;
 }
 
 

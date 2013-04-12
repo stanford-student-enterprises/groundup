@@ -1,8 +1,8 @@
 <div class="menu-item">
-    <div class="menu-item-image"><img class="img-polaroid" src="/media/{{ barista.image }}" /></div>
+    <div class="menu-item-image"><img class="img-polaroid" {% if barista.image %}src="/media/{{ barista.image }}" {% else %} src="/static/images/blank-profile.png" {% endif %}></div>
     <div class="menu-item-info">
         <div class="menu-item-name"><h2>{{ barista.name }}</h2></div>
-        <div class="menu-item-description">{{ barista.description }}</div>
+        <div class="menu-item-description">{{ barista.bio }}</div>
     </div>
 </div>
 

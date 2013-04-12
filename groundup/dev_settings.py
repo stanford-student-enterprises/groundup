@@ -4,9 +4,11 @@ import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'groundup.website@gmail.com'
 EMAIL_HOST_PASSWORD = '%' + 'b2*79%63!cb&04*B7$8B)A2A36739'
-EMAIL_USE_TLS = True
+EMAIL_PORT = 587
 
 ADMINS = (
 # ('Your Name', 'your_email@example.com'),

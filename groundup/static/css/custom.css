@@ -247,7 +247,7 @@ body {
 .menu-item {
     height: auto;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .menu-item-info {
@@ -259,6 +259,10 @@ body {
 	max-height: 200px;
     max-width: 200px;
 	float: left;
+}
+
+.img-polaroid {
+    max-height: 200px;
 }
 
 .menu-item .menu-item-name {

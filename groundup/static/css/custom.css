@@ -244,6 +244,11 @@ body {
 	padding: 10px;
 }
 
+.pane-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .menu-item {
     height: auto;
     margin-left: 20px;

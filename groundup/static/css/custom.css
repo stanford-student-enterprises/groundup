@@ -245,13 +245,13 @@ body {
 }
 
 .menu-item {
-    height: 300px;
+    height: auto;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .menu-item-info {
-	padding: 20px;
-	margin-left: 200px;
+	margin-left: 250px;
 }
 
 .menu-item .menu-item-image {
